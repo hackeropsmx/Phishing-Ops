@@ -104,7 +104,7 @@ server="thdrh"
 start1
 
 elif [[ $option == 21 ]]; then
-server="thdrh"
+server="icloud"
 start1
 
 elif [[ $option == 22 ]]; then
