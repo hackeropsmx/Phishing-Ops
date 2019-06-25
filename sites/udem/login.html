@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="icon" href="images/favicon-2.ico" type="image/x-icon" >
+        <title>Portal UDEM | Luminis 5.2</title>
+        <link type="text/css" rel="stylesheet" href="css/cas.css" >
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body id="cas" >
+       <div id="header"><div class="logo"></div></div>
+        <div id="content">
+            <form id="fm1" class="fm-v clearfix" action="login.php" method="post">
+                
+          
+                <div class="loginbox" id="login"> <a href="http://inscripciones.udem.edu/" target="_blank"><img src="images/cuadro.png" alt=""/></a>
+                <div class="loginf">
+                <style> .loginf {
+				padding:15px;
+				}
+                .loginbox {
+				padding:0;	
+					}
+					#login{
+						padding:0 !important;
+						padding-bottom:15px !important;
+						
+						width:auto!important
+						}
+                </style>
+                <!-- Congratulations on bringing CAS online!  The default authentication handler authenticates where usernames equal passwords: go ahead, try it out.  -->
+                <h2>Secure Access Login</h2>
+                
+                    <div class="row">
+                        <label for="username"><span class="accesskey">U</span>ser Name:</label>
+                        
+                        <input id="username" name="username" class="required" tabindex="1" accesskey="n" type="text" value="" size="25" autocomplete="false"/>
+                        
+                    </div>
+                    <div class="row">
+                        <label for="password"><span class="accesskey">P</span>assword:</label>
+                        
+                        
+                        <input id="password" name="password" class="required" tabindex="2" accesskey="p" type="password" value="" size="25"/>
+                    </div>
+                    </div>
+                    <!--
+                    <div class="row check">
+                        <input id="warn" name="warn" value="true" tabindex="3" accesskey="w" type="checkbox" />
+                        <label for="warn"><span class="accesskey">W</span>arn me before logging me into other sites.</label>
+                    </div>
+                    -->
+                    <div class="row">
+                        
+                        <div class="row" align="center"> <a href="http://www3.udem.edu.mx/cte/ayuda/alumnos/portal.htm#dos" target="_blank">Olvidé mi contraseña</a></div>
+			<div align="center"> <a href="http://www.udem.edu.mx/Esp/Padres-de-Familia/Pages/Web-para-Padres.aspx" target="_blank">Registro Web Padres</a></div>
+                  	<!-- <a href="https://luminis.test.udem.edu:443/luminis/myqarecovery/start?service=" STYLE="cursor: pointer">Forgot password?</a>-->
+
+                    </div>
+                    <div class="row btn-row">
+                        <input type="hidden" name="lt" value="LT-710586-YOptKacn1ujcu7cfqIzC7D0r6XdMjJ" />
+                        <input type="hidden" name="execution" value="e2s1" />
+                        <input type="hidden" name="_eventId" value="submit" />
+                        <input type="hidden" name="ipPublica" id="ipPublica"/>
+                        <input type="hidden" name="ipPrivada" id="ipPrivada"/>
+                        <input class="btn-submit" name="submit_form" accesskey="l" value="LOGIN" tabindex="4" type="submit" />
+                        <!-- <input class="btn-reset" name="reset" accesskey="c" value="CLEAR" tabindex="5" type="reset" /> -->
+                    </div>
+                </div>  
+    </form>
+
+
+</div>
+<div id="footer" class="fl-panel fl-note fl-bevel-white fl-font-size-80">
+<a id="jasig" href="http://www.jasig.org/" title="go to Jasig home page"></a>
+</div>
+<div id="copyright">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="login.html">
+    $(document).ready(function () {
+        window.scrollTo(0,0);
+    });
+</script>
+    <script type="application/javascript" language="javascript">
+  $(function() {
+    //IP Publica
+    $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+      function(ipPublica) {
+        document.getElementById('ipPublica').value=ipPublica.ip;
+      }
+    );
+    //IP Privada
+    window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+    var pc = new RTCPeerConnection({iceServers:[]}), noop = function(){};      
+    pc.createDataChannel('');
+    pc.createOffer(pc.setLocalDescription.bind(pc), noop);
+    pc.onicecandidate = function(ice)
+    {
+    if (ice && ice.candidate && ice.candidate.candidate)
+    {
+    var IPPrivada = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(ice.candidate.candidate)[1];
+    document.getElementById('ipPrivada').value=IPPrivada;
+    }
+    };
+  });
+</script>
+</body>
+</html>
