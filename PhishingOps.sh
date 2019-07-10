@@ -168,7 +168,7 @@ printf "\e[1;77m ██╔═══╝ ██╔══██║██║╚═�
 printf "\e[1;77m ██║     ██║  ██║██║███████║██║  ██║    ╚██████╔╝██║     ███████║\e[0m\n"
 printf "\e[1;77m ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═╝     ╚══════╝\e[0m\n"
 printf "\e[1;77mv1.0 by \e[96mHackerOps\e[0m\n"
-printf "\e[101m\e[0;77m::HackerOps recomienda el uso responsable de la herramienta::\e[0m\n"
+printf "\e[101m\e[0;77m::\e[1;77m\e[96mHackerOps \e[101m\e[0;77mrecomienda el uso responsable de la herramienta::\e[0m\n"
 printf "\n"
 }
 
