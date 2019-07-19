@@ -1,9 +1,10 @@
 #!/bin/bash
-# Hacker Ops Pish v0.9
+# Phishing Ops v0.9
 # Basada en shellphish de linux_choice (https://github.com/thelinuxchoice/shellphish)
 # Templates generados por SocialFish (https://github.com/UndeadSec/SocialFish)
 # Templates de Instagram por An0nUD4Y (https://github.com/An0nUD4Y)
-# Agradecimiento a Kito804 y Ruben Fernandez por apoyo con las templates adicionales
+# Agradecimiento a Kito804 y Ruben Fernandez (integrity) por apoyo con las templates adicionales
+# Template de SIASE y MiTec aun no funcionales
 
 trap 'printf "\n";stop;exit 1' 2
 
@@ -167,7 +168,7 @@ printf "\e[1;77m ██████╔╝███████║██║██
 printf "\e[1;77m ██╔═══╝ ██╔══██║██║╚════██║██╔══██║    ██║   ██║██╔═══╝ ╚════██║\e[0m\n"
 printf "\e[1;77m ██║     ██║  ██║██║███████║██║  ██║    ╚██████╔╝██║     ███████║\e[0m\n"
 printf "\e[1;77m ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═╝     ╚══════╝\e[0m\n"
-printf "\e[1;77mv1.0 by \e[96mHackerOps\e[0m\n"
+printf "\e[1;77mv0.9 by \e[96mHackerOps\e[0m\n"
 printf "\e[101m\e[0;77m::\e[1;77m\e[96mHackerOps \e[101m\e[0;77mrecomienda el uso responsable de la herramienta::\e[0m\n"
 printf "\n"
 }
