@@ -4,5 +4,7 @@ Phishing-Ops es una herramienta creada principalmente para demostrar los peligro
 
 # Instalacion
 git clone https://github.com/hackeropsmx/Phishing-Ops/
+
 cd Phishing-Ops
+
 bash PhishingOps.sh
